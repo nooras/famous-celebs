@@ -1,0 +1,39 @@
+.AllCelebs {
+    width: 40rem;
+}
+
+.accordion > .accordion-item {
+    border: 2px solid rgb(209, 208, 208);
+    border-radius: 10px;
+}
+
+/* Override */
+.accordion{
+    --bs-accordion-bg: none;
+    --bs-accordion-border-width: none;
+}
+
+.accordion > .accordion-item > .accordion-header > .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+}
+
+.side-heading {
+    color: #a7a7a7;
+    margin-bottom: 0;
+}
+
+input, select {
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.searchBar {
+    width: '43rem'; 
+    padding-right: '3rem';
+}
+/* 
+.accordian {
+    --bs-accordion-bg: none;
+} */
