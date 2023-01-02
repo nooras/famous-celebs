@@ -50,7 +50,7 @@ function AllCelebs(){
                                 <div className="row text-start">
                                     <div className="col-sm">
                                         <p className='side-heading'>Age</p>
-                                        { editId === i ? <input className='my-auto p-2' defaultValue={age} style={{width:'150px'}} /> :
+                                        { editId === i ? <input className='my-auto p-2' type="number" pattern="[0-9]*" defaultValue={age} style={{width:'150px'}} /> :
                                         <p>{age} Years</p> }
                                     </div>
                                     <div className="col-sm">
@@ -84,7 +84,7 @@ function AllCelebs(){
                             :
                                 <>
                                 <img style={{paddingRight:'10px'}}src="https://img.icons8.com/windows/32/ff0000/waste.png" onClick={() => deleteOnClick(i)} alt="waste"/>
-                                <img src="https://img.icons8.com/windows/32/008CB0/edit--v1.png" onClick={() => editOnClick(i)} alt="edit"/></>
+                                {age >= 18 && <img src="https://img.icons8.com/windows/32/008CB0/edit--v1.png" onClick={() => editOnClick(i)} alt="edit"/>}</>
                             }
                             </div>
                         </Accordion.Body>
