@@ -1,5 +1,7 @@
 ## Famous Celebrities App
 
+- Live : https://famous-celebs.netlify.app/
+
 - Clone it
 - Run yarn install
 - Run yarn start
